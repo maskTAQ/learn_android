@@ -14,7 +14,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        FrameLayout frame = (FrameLayout) findViewById(R.id.myframe);
+       // FrameLayout frame = (FrameLayout) findViewById(R.id.myframe);
         final M mzi = new M(MainActivity.this);
         //final TextView locationTextView  = (TextView) findViewById(R.id.locationText);
         mzi.setOnTouchListener(new View.OnTouchListener() {
