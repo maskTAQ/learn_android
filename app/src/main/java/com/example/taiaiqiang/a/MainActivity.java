@@ -16,7 +16,7 @@ public class MainActivity extends AppCompatActivity {
 
         FrameLayout frame = (FrameLayout) findViewById(R.id.myframe);
         final M mzi = new M(MainActivity.this);
-        final TextView locationTextView  = (TextView) findViewById(R.id.locationText);
+        //final TextView locationTextView  = (TextView) findViewById(R.id.locationText);
         mzi.setOnTouchListener(new View.OnTouchListener() {
             @Override
             public boolean onTouch(View v, MotionEvent event) {
@@ -26,10 +26,10 @@ public class MainActivity extends AppCompatActivity {
                 mzi.y = y;
                 mzi.invalidate();
 
-                locationTextView.setText("坐标地址:"+x.toString()+y.toString());
+                //locationTextView.setText("坐标地址:"+x.toString()+y.toString());
                 return true;
             }
         });
-        frame.addView(mzi);
+        //frame.addView(mzi);
     }
 }
